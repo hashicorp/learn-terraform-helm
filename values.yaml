@@ -1,0 +1,4 @@
+  customTemplate:
+    configMapName: "my-configmap"
+    configMapKey: "location"
+

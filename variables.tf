@@ -1,0 +1,1 @@
+variable "application_name"{}
