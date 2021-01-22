@@ -58,7 +58,7 @@ resource "kubernetes_deployment" "terramino" {
 
       spec {
         container {
-          image = "onlydole/beacon:datadog"
+          image = "tr0njavolta/terramino"
           name  = var.application_name
         }
       }

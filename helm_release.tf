@@ -8,18 +8,16 @@ provider "helm" {
 
 
 
-resource "helm_release" "nginx" {
-  repository = "https://charts.bitnami.com/bitnami"
-
-  name = "nginx-ingress-controller"
-
-  chart = "nginx-ingress-controller"
+resource "helm_release" "kubewatch" {
+  name       = "kubewatch"
+  repository      = "https://charts.bitnami.com/bitnami"
+  chart = "kubewatch"
 
   values = [
-    "${file("values.yaml")}"
+    "${file("kubewatch-values.yaml")}"
   ]
-  set {
-    name  = "cluster.enabled"
-    value = "true"
+  set_sensitive {
+    name  = "slack.token"
+    value = "var.slack_app_token"
   }
 }
