@@ -1,9 +1,9 @@
-variable "application_name"{
-  type = string
+variable "application_name" {
+  type    = string
   default = "terramino"
 }
 variable "slack_app_token" {
-  type = string
+  type        = string
   description = "Slack App Token"
 }
 

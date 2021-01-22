@@ -10,8 +10,8 @@ provider "helm" {
 
 resource "helm_release" "kubewatch" {
   name       = "kubewatch"
-  repository      = "https://charts.bitnami.com/bitnami"
-  chart = "kubewatch"
+  repository = "https://charts.bitnami.com/bitnami"
+  chart      = "kubewatch"
 
   values = [
     "${file("kubewatch-values.yaml")}"
