@@ -2,19 +2,6 @@ rbac:
   create: true
 resourcesToWatch:
   deployment: true
-  replicationcontroller: true
-  replicaset: true
-  daemonset: true
   services: true
-  pod: true
-  job: true
-  node: true
-  clusterrole: true
-  serviceaccount: true
-  persistentvolume: true
-  namespace: true
-  secret: true
-  configmap: true
-  ingress: true
 slack:
-  channel: '#general'
+  channel: "#general"
