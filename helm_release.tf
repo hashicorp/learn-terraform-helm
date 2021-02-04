@@ -9,6 +9,7 @@ provider "helm" {
     }
   }
 }
+
 resource "helm_release" "kubewatch" {
   name       = "kubewatch"
   repository = "https://charts.bitnami.com/bitnami"
@@ -22,7 +23,6 @@ resource "helm_release" "kubewatch" {
     value = "var.slack_app_token"
   }
 }
-
 
 output "k8s_terramino" {
   value = "http://${kubernetes_service.terramino.load_balancer_ingress.0.hostname}:8080"

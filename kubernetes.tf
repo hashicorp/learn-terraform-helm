@@ -35,7 +35,6 @@ resource "kubernetes_namespace" "terramino" {
   }
 }
 
-
 resource "kubernetes_deployment" "terramino" {
   metadata {
     name      = var.application_name
