@@ -1,7 +1,9 @@
 rbac:
   create: true
-resourcesToWatch:
-  deployment: true
-  services: true
 slack:
-  channel: "#YOUR_CHANNEL"
+  enabled: true
+  channel: '#general'
+resourcesToWatch:
+  pod: true
+  daemonset: true
+  services: true
