@@ -2,7 +2,7 @@ rbac:
   create: true
 slack:
   enabled: true
-  channel: '#general'
+  channel: '#YOUR-CHANNEL'
 resourcesToWatch:
   pod: true
   daemonset: true
